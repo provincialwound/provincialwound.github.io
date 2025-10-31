@@ -115,6 +115,7 @@ section > * {
 }
 
 /* ============= TYPOGRAPHY ============ */
+body { background-color: #715080; }
 h1 {
     font-size: var(--fs-xxxl);
     margin-top: 32px;
