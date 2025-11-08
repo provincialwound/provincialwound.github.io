@@ -333,8 +333,9 @@ p {
     font-weight: 400
 }
 
-img {margin-bottom: 24px
-box-shadow: 8px 10px 8px var(--red-800);
+img {
+    margin-bottom: 24px;
+box-shadow: 8px 10px 8px var(#888);
 }
 /* ===== VIDEO ===== */
 .video-container {
