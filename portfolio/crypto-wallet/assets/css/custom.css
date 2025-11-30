@@ -1,27 +1,92 @@
+/* ===========================
+   Custom CSS
+   =========================== */
 
-/* Add your custom CSS rules */
-body { font-family: 'Outfit', sans-serif; }
+body {
+    font-family: 'Outfit', sans-serif;
+}
 
-header h1 { font-size: var(--font-size-xxxl) }
+/* Hero text sizing */
+.hero-title {
+    font-size: 4rem;      /* Bigger main title */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-.section-selector-1 { background-color: var(--trend-700) }
-.section-selector-1 > .badge span { color: var(--white-000) }
-.section-selector-1 > .badge span { background-color: var(--trend-700) }
-.section-selector-1 > .badge span { text-transform: uppercase }
+.hero-subtitle {
+    font-size: 2rem;      /* Smaller subtitle */
+    font-weight: 400;
+    margin-bottom: 0;
+}
 
+/* Optional: adjust responsive sizes */
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
 
-.section-selector-3 { background-color: var(--trend-700) }
+/* Section 1 */
+.section-selector-1 {
+    background-color: var(--trend-700);
+}
 
-.section-selector-2 { background-color: var(--trend-800) }
+.section-selector-1 > .badge span {
+    color: var(--white-000);
+    background-color: var(--trend-700);
+    text-transform: uppercase;
+}
 
-.section-selector-4.theme-dark { background-color: var(--trend-700) }
-.section-selector-4 div[class^='flex-cols-'] div[class^='col-'] figure.icon { color: var(--blue-300) }
+/* Section 3 */
+.section-selector-3 {
+    background-color: var(--trend-700);
+}
 
+.section-selector-3 > .badge span {
+    background-color: var(--trend-700);
+}
 
-.section-selector-3>.badge span { background-color: var(--trend-700)}
+/* Section 4 */
+.section-selector-4.theme-dark {
+    background-color: var(--trend-700);
+}
 
+.section-selector-4 div[class^='flex-cols-'] div[class^='col-'] figure.icon {
+    color: var(--blue-300);
+}
 
+/* Section headings */
 .section-selector-1 h2,
 .section-selector-2 h2,
 .section-selector-3 h2,
-.section-selector-4 h2|{font-weight: 400}
+.section-selector-4 h2 {
+    font-weight: 400;
+}
+
+/* Responsive YouTube video */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+.brand .logo {
+    max-width: 50%;    /* Shrinks the logo to 50% of its container */
+    width: auto;       /* Adjust automatically */
+    height: auto;      /* Maintain aspect ratio */
+    display: block;
+}
+.container-menu {
+    max-width: 150px;   /* limits container width */
+}
