@@ -18,13 +18,42 @@ body {
     font-family: 'Saira Condensed', sans-serif;
     letter-spacing: 1px;
     font-size: calc(var(--font-size-xl) * 1.2);
+    
 }
+
+
+/* Bold + underline only on the text, not the whole button or the icon */
+.btn-text-strong {
+    font-weight: 700;               /* bold */
+    text-decoration: underline;     /* underline the text */
+    text-underline-offset: 2px;     /* nicer spacing from baseline */
+}
+
+/* Keep the anchor itself clean (no default underline from link styles) */
+.container-btn .btn-plain {
+    text-decoration: none;
+}
+
+/* Optional: spacing between text and arrow */
+.container-btn .btn i {
+    margin-left: 0.5rem;
+}
+
+/* Optional: nicer hover effect */
+.container-btn .btn:hover .btn-text-strong {
+    text-decoration-thickness: 2px; /* slightly thicker underline on hover */
+}
+
+
+
 
 /* ===========================
    SECTION 2
    =========================== */
 .section-selector-2 {
     font-family: 'Playfair Display', serif;
+
+    
 }
 
 /* ===========================
