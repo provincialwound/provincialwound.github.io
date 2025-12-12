@@ -1,144 +1,78 @@
-/* ============= WEB BROWSER RESETS ============ */
+/* --------------------------------------------------
+
+
 * {
     margin: 0;
     padding: 0;
-    border: none;
-}
-*, *::before, *::after {
     box-sizing: border-box;
 }
-html {
-    height: 100%;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    scroll-behavior: smooth;
-    scroll-padding-top: 20px;
-}
+
 body {
-    line-height: 1.5;
-    min-height: 100vh;
-    background-color: var(--blue-200);
-    font-family: var(--font-serif);
-}
-img {
-    width: 100%;
-    height: auto;
-}
-@media (max-width: 767px) {
-    body {
-        text-rendering: optimizeSpeed;
-    }
-}
-@media (min-width: 768px) {
-    body {
-        text-rendering: optimizeLegibility;
-    }
-}
-
-/* ============ CUSTOM PROPERTIES ============ */
-:root {
-    /* Font families */
-    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
-    --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
-    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-   
-    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
-    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
-    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
-    --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
-    --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
-    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
-
-    /* Sample color palette */
-    --blue-200: #BFDBFE;
-    --blue-800: #1E40AF;
-}
-
-/* ============== LAYOUT FOR CONTENT CONTAINERS ================= */
-nav, header, section, footer {
-    position: relative;
-    display: block;
-}
-header, section, footer {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
-section > *:last-child {
-    margin-bottom: 0 !important;
-}
-
-/* ====================== HEADER ======================== */
-@media (min-width: 768px) {
-    header {
-        padding-top: 2%;
-        padding-right: 20%;
-        padding-bottom: 5%;
-        padding-left: 20%;
-    }
-}
-@media (max-width: 767px) {
-    header {
-        padding-top: 5%;
-        padding-right: 5%;
-        padding-bottom: 0%;
-        padding-left: 5%;
-    }
-}
-
-/* ====================== SECTIONS ======================== */
-@media (min-width: 768px) {
-    section {
-        padding-top: 3%;
-        padding-right: 20%;
-        padding-bottom: 3%;
-        padding-left: 20%;
-    }
-}
-@media (max-width: 767px) {
-    section {
-        padding-top: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-left: 5%;
-    }
-}
-section {
-    max-width: 1920px;
-}
-section > * {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ============= TYPOGRAPHY ============ */
-body { background-color: #715080; }
-h1 {
-    font-size: var(--fs-xxxl);
-    margin-top: 32px;
-    margin-bottom: 16px;
-    line-height: 1.2;
-    font-family: var(--font-serif);
-}
-
-h2 {
-    color: var(--blue-800);
-    font-size: var(--fs-xl);
-    line-height: 1.2;
-    margin-bottom: 6px;
-    font-family: var(--font-serif);
-    font-weight: normal;
-    font-style: italic;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: var(--fs-md);
+    font-family: "Poppins", sans-serif;
+    background: #f4f4f4;
+    color: #333;
     line-height: 1.7;
-    margin-bottom: 12px;
 }
 
+
+header {
+    background: linear-gradient(135deg, #004aad, #0078ff);
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Big heading */
+header h1 {
+    font-size: 8rem;        /* doubled size */
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.05;
+}
+
+/* Smaller sub-heading */
+header h2 {
+    font-size: 4.4rem;      /* doubled size */
+    font-weight: 300;
+    opacity: 0.95;
+    margin-top: 10px;
+}
+
+
+main section {
+    width: 100%;
+    padding: 70px 25px;
+    color: white;
+    position: relative;
+}
+
+/* Section headings larger */
+main section h2 {
+    font-size: 3rem;       /* larger header */
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Paragraph text slightly smaller */
+main section p {
+    max-width: 900px;
+    font-size: 1.2rem;     /* slightly smaller */
+    margin-bottom: 18px;
+    line-height: 1.75;
+}
+
+.section-1 { background: #6C63FF; }
+.section-2 { background: #FF6584; }
+.section-3 { background: #00A878; }
+.section-4 { background: #FFA947; color: #222; }
+.section-5 { background: #4A9CFF; }
+.section-6 { background: #FF4D4D; }
+
+a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+}
