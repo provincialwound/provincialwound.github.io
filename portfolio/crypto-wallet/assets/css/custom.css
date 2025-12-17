@@ -15,3 +15,14 @@ header h1 { font-size: var(--font-size-xxxl) }
 .section-selector-3 { background-color: var(--trend-700) }
 .section-selector-4.theme-dark { background-color: var(--trend-700) }
 .section-selector-4 div[class^='flex-cols-'] div[class^='col-'] figure.icon { color: var(--blue-300) }
+
+/* Make the main hero title bigger */
+.container-text h1 {
+    font-size: 64px;      /* adjust size as needed */
+    font-weight: 700;     /* optional */
+}
+
+/* Make the subtitle bigger */
+.container.container-text h2 {
+    font-size: 32px;      /* adjust size as needed */
+    font-weight: 400;     /* optional */
