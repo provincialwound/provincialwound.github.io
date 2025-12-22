@@ -1,5 +1,11 @@
 /* Add your custom CSS here */
 
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 .section-selector-1 { background-color: var(--green-800) }
 .section-selector-2 {background-color: var(--gray-200)}
@@ -15,11 +21,6 @@
               
 header h1 { font-size: var(--font-size-xxxl) } 
 
-
-<style>
-.underline {
-    text-decoration: underline;
-}
 </style>
 
 <p>
@@ -31,4 +32,4 @@ header h1 { font-size: var(--font-size-xxxl) }
     <span class="underline">footwear</span>. 
     And we place <span class="underline">customer satisfaction</span> at the heart of all we do.
 </p>
-``
+
